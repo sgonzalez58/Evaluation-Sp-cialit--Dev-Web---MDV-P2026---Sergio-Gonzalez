@@ -17,3 +17,6 @@ Pour la vérification des administrateurs, j'ai utilisé le même middleware que
 J'ai utilisé les sessions de la même manière que les exercices précédents.
 Avant de commencer les routes get, post, put, patch et delete, j'ai mis en place les routes get /login, post /login et get /logout de la manière que vu dans les précédents exercices. J'ai juste ajouté bcryptjs pour le hachage.
 
+J'ai ensuite modifier l'engine de l'application pour pouvoir faire des views en liquid.
+J'ai fait un tableau avec les pays sur la route get /country.
+
