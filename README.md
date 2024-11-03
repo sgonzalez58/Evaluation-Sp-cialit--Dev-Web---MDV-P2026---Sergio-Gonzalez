@@ -29,3 +29,5 @@ Sur la partie admin, une route put devrait être faite pour la modification mais
 J'ai ensuite décidé d'attaquer la partie gestion d'utilisateur.
 
 J'ai utilisé le même router que dans les exercices précédents. J'ai simplement ajouté le hachage du mot de passe.
+
+Pour finir, j'ai réalisé quelques tests.
