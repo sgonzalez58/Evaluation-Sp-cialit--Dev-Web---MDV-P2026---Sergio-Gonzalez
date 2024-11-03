@@ -12,7 +12,7 @@
       <tr style="background-color:#D4D4D4">
     {% endif %}
       <td>{{ country.name.common }}</td>
-      <td><a href="/country/{{country.name.common |  url_encode}}">edit</a></td>
+      <td><a href="/admin/{{country.name.common | url_encode}}">edit</a></td>
     </tr>
   {% endfor %}
 </table>

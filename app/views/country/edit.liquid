@@ -1,1 +1,26 @@
 <h1>{{country.name.common}}</h1>
+<form method="POST" action="/country/{{country.name.common | url_encode}}?_method=put">
+  <div>
+    <h2>Name</h2>
+    <div>
+      <label for="name_common">
+        common :
+      </label>
+      <input type="text" id="name_common" name="name_common" placeholder="{{ country.name.common }}">
+    </div>
+    <div>
+      <label for="name_official">
+        official :
+      </label>
+      <input type="text" id="name_official" name="name_official" placeholder="{{ country.name.official }}">
+    </div>
+    <div>
+      <h3>Native name</h3>
+      <label for="name_native_name">
+        official :
+      </label>
+      <input type="text" id="name_official" name="name_official" placeholder="{{ country.name.official }}">
+    </div>
+    <input type="text" name="name_official" placeholder="{{ country.name.official }}">
+  </div>
+</form>

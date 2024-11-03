@@ -1,6 +1,42 @@
 const customCountryProperties = (req, propertiesArray, countries) => {
     let propertiesToDelete = [];
-    let allProperties = Object.keys(countries[0])
+    const allProperties = [
+        "name",
+        "tld",
+        "cca2",
+        "ccn3",
+        "cca3",
+        "cioc",
+        "independent",
+        "status",
+        "unMember",
+        "currencies",
+        "idd",
+        "capital",
+        "altSpellings",
+        "region",
+        "subregion",
+        "languages",
+        "translations",
+        "latlng",
+        "landlocked",
+        "borders",
+        "area",
+        "demonyms",
+        "flag",
+        "maps",
+        "population",
+        "gini",
+        "fifa",
+        "car",
+        "timezones",
+        "continents",
+        "flags",
+        "coatOfArms",
+        "startOfWeek",
+        "capitalInfo",
+        "postalCode"
+    ]
     for (const property of allProperties) {
         if (!propertiesArray.includes(property)) {
             propertiesToDelete.push(property);

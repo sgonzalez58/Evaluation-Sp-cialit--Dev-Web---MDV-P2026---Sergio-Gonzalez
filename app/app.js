@@ -26,9 +26,13 @@ const users = require("./data/users.json")
 
 const { customCountryProperties } = require('./service/country.js')
 
-const { router } = require("./router/country.js")
+const countryRouter = require("./router/country.js")
+const adminRouter = require("./router/admin.js")
+const userRouter = require("./router/user.js")
 
-app.use('/country', router)
+app.use('/country', countryRouter)
+app.use('/admin', adminRouter)
+app.use('/user', userRouter)
 
 
 app.get('/', (req, res) => {

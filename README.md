@@ -20,3 +20,12 @@ Avant de commencer les routes get, post, put, patch et delete, j'ai mis en place
 J'ai ensuite modifier l'engine de l'application pour pouvoir faire des views en liquid.
 J'ai fait un tableau avec les pays sur la route get /country.
 
+J'ai décidé de créer un router admin afin de bien envoyer du liquid sur les pages admin mais du JSON sur l'API country.
+
+Comme l'asso souhaite seulement pouvoir modifier certaines informations des pays, j'ai fais une route patch sur l'API.
+
+Sur la partie admin, une route put devrait être faite pour la modification mais je l'ai laissé de coté pour me concentrer sur les parties demandées dans le sujet.
+
+J'ai ensuite décidé d'attaquer la partie gestion d'utilisateur.
+
+J'ai utilisé le même router que dans les exercices précédents. J'ai simplement ajouté le hachage du mot de passe.
